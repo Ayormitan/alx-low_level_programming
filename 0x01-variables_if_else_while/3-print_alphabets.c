@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - code entry point
+ *
+ * Return: Always succes
+ */
 
 int main(void)
 {
