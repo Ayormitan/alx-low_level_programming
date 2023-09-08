@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - Entry point
  *
  * Return: Always succes
@@ -14,10 +14,10 @@ int main(void)
 		putchar('0' + i);
 	}
 	while (ch <= 'f')
-        {
-                putchar(ch);
+	{
+	putchar(ch);
 		ch++;
-        }
+	}
 	putchar('\n');
 	return (0);
 }
