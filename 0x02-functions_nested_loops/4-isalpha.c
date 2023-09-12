@@ -3,6 +3,7 @@
 /**
  * _isalpha - function to print letters
  *
+ * @c: character to check
  * Return: On succes  1, else 0
  */
 int _isalpha(int c)
