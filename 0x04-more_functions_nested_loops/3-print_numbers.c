@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * print_numbers - function to print digit
+ *
+ * Return: Always success
+ */
 void print_numbers(void)
 {
 	int n;
