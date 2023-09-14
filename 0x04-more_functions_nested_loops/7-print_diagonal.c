@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
+ * print_diagonal - prints diagonal
  *
- *
- *
- *
- *
+ *@n: What to print
+ *Return: ALway success
  */
 void print_diagonal(int n)
 {
@@ -19,7 +18,7 @@ void print_diagonal(int n)
 		else
 		{
 	for (count = 0; count < n; count++)
-		{	
+		{
 		for (count2 = 0; count2 < n; count2++)
 		{
 			_putchar(' ');
