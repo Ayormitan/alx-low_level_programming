@@ -1,5 +1,10 @@
 #include "main.h"
 #include <stdio.h>
+/**
+ * main - Function to test code
+ *
+ * Return: Always success
+ */
 int main()
 {
 	char c;
