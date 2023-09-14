@@ -8,15 +8,15 @@
  */
 void print_square(int size)
 {
-	int count;
-	int count2;
-
 	if ((size == 0) && (size < 0))
 	{
 		_putchar('\n');
 	}
 	else
 	{
+		int count;
+		int count2;
+
 		for (count = 0; count < size; count++)
 		{
 			for (count2 = 0; count2 < size; count2++)
