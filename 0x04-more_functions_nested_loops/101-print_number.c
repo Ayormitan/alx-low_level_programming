@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * function to print integer
+ * print_number - function to print integer
  *
  * @n: Digit to check for
+ * Return: ALways sucess
  */
 void print_number(int n)
 {
