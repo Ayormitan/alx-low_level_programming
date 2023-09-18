@@ -10,7 +10,11 @@ void print_rev(char *s)
 {
 	int i;
 	int len;
-
+	
+	if (s == NULL)
+	{
+		return;
+	}
 	for (len = 0; s[len] != '\0'; len++)
 	{
 		len++;
