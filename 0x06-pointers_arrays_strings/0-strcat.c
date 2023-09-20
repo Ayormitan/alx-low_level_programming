@@ -5,7 +5,7 @@
  *
  * @dest: Where to place concatenated string
  * @src: Source string to be copied
- * @Return: Concatenated string on success
+ * Return: Concatenated string on success
  */
 char *_strcat(char *dest, char *src)
 {
