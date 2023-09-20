@@ -1,27 +1,14 @@
 #include "main.h"
+#include <string.h>
 /**
- * _strcat - fuction to concatenate strings
- * @dest: String to append to
- * @src: String to move
- * Return: Concatenated string
+ * _strcat - function that concatenate string
+ *
+ * @dest: Where to place concatenated string
+ * @src: Source string to be copied
+ * @Return: Concatenated string on success
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int j;
-
-	i = 0;
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	j = 0;
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	dest[i] = '\0';
+	strcat(dest, src);
 	return (dest);
 }
