@@ -6,6 +6,7 @@
  * @dest: Destination string
  * @src: String to copt
  * @n: Prints particular number of string
+ * Return: Always succes
  */
 char *_strncat(char *dest, char *src, int n)
 {
