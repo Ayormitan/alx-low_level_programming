@@ -17,26 +17,21 @@ char *cap_string(char *str)
 	lenght = strlen(str); /** gets string lenght*/
 	for (i = 0; i < lenght; i++)
 	{
-		if (i == 0)/** check if the first char is upper else */
-		{
-			if (str[i] >= 'a' && str[i] <= 'z')
-			{
-				str[i] = toupper(str[i]);/** library function*/
-				/**to make upper char*/
-			}
-		}
-		else if (isspace(str[i]) || isdigit(str[i]) || ispunct(str[i])) /** library*/
-			/** function will check for space, digit and puntuations*/
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' ||
+				str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' ||
+	    str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
+		/** check for these behaviours */
 		{
 			newchar = 1;
 		}
+		else if (newchar)
+		{
+			str[i] = toupper(str[i]);
+			newchar = 0; /*resets flag*/
+		}
 		else
 		{
-			if (newchar)
-			{
-			str[i] = toupper(str[i]);/** capitalize first letter of new char */
-			newchar = 0; /** resets flag */
-			}
+			str[i] = tolower(str[i]);/** capitalize first letter of new char */
 		}
 	}
 	return (str);
