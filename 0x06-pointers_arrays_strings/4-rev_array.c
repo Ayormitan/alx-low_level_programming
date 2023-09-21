@@ -14,10 +14,9 @@ void reverse_array(int *a, int n)
 	for (i = 0; i < n; i++)
 	{
 		temp[i] = a[i]; /** store array temporarily*/
-		a[i] = a[n - i - 1] / 2;/** do classic swap algorithm*/
 	}
 	for (i = 0; i < n; i++)
 	{
-		a[i] = temp[i];
+		a[i] = temp[n - i - 1]; /** copy from temp in rev order*/
 	}
 }
