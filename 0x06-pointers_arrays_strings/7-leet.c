@@ -7,6 +7,7 @@
  */
 char *leet(char *s)
 {
+	char *r = s;
 	char a[] = { 'a', 'e', 'o', 't', 'l' };
 	char b[] = { 'A', 'E', 'O', 'T', 'L' };
 	int n[] = { 4, 3, 0, 7, 1 };
@@ -21,5 +22,5 @@ char *leet(char *s)
 		}
 		s++;
 	}
-	return (s);
+	return (r);
 }
