@@ -7,7 +7,7 @@
  * @n: character to check
  * Return: First occurance of char to string
  */
-char *_strchr(char *s, char n)
+char *_strchr(char *s, char c)
 {
 	if (s == NULL)
 	{
@@ -15,7 +15,7 @@ char *_strchr(char *s, char n)
 	}
 	while (*s != '\0')
 	{
-		if (*s == n)
+		if (*s == c)
 		return (s);
 		s++;
 	}
