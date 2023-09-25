@@ -4,7 +4,7 @@
  * _strchr - func searches char
  *
  * @s: pointer to strings
- * @n: character to check
+ * @c: character to check
  * Return: First occurance of char to string
  */
 char *_strchr(char *s, char c)
