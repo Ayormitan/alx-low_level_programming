@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	_printrev_recursion("\n I love to code");
+	_print_rev_recursion("\n I love to code");
 	return (0);
 }
