@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _printrev_recursion - function prints strings recursively
+ * _print_rev_recursion - function prints strings recursively
  *
  * @s: Pointer to string to call
  * Return: Always success
