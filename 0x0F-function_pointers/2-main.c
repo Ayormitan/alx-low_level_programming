@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_pointer.h"
+#include "function_pointers.h"
 int _is98(int ele)
 {
 	return (ele == 98);
