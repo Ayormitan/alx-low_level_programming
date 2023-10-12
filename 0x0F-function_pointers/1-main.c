@@ -6,20 +6,18 @@
  *
  * Return: Nothing.
  */
-int printnum(int ele)
+void printnum(int ele)
 {
 	printf("%d\n", ele);
-	return(0);
 }
 /**
  * print_hexnum - Function prints hexadecimal numbers
  *
  *@ele: Elemnt to print
  */
-int print_hexnum(int ele)
+void print_hexnum(int ele)
 {
 	printf("0x%x\n", ele);
-	return (0);
 }
 /**
  * main - Test function
