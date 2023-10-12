@@ -8,47 +8,37 @@
  */
 void print_all(const char * const format, ...)
 {
-	int typei;
-	char typec;
-	float typef;
-	char *string;
 	va_list lists;
-	const char *format_ptr = format; /**non constant ptr iterate the string*/
+	const char *format_ptr = format;
 
 	va_start(lists, format);
 	while (*format_ptr)
 	{
-		if (*format_ptr == 'i')
+		switch (*format_ptr)
 		{
-			typei = va_arg(lists, int);
-				printf("%d, ", typei);
-		}
-		else if (*format_ptr == 'c')
+		case 'i':
+			printf("%d", va_arg(lists, int));
+			break;
+		case 'c':
+			printf("%c", va_arg(lists, int));
+			break;
+		case 'f':
+			printf("%f", va_arg(lists, double));
+			break;
+		case 's':
 		{
-			typec = va_arg(lists, int);
-				printf("%c, ", typec);
-		}
-		else if (*format_ptr == 'f')
-		{
-			typef = va_arg(lists, double);
-				printf("%f, ", typef);
-		}
-		else if (*format_ptr == 's')
-		{
-			string = va_arg(lists, char *);
-				if (string != NULL)
-				{
+			char *string = va_arg(lists, char *);
+				if (string)
 					printf("%s", string);
-				}
 				else
-				{
 					printf("(nil)");
-				}
 		}
-		else
-		{
+		break;
+		default:
 			printf("ignore format");
 		}
+		if (*(format_ptr + 1))
+			printf(", ");
 		format_ptr++;
 	}
 	va_end(lists);
