@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include "function_pointers.h"
+/**
+ * printnum - prints an integer
+ *@ele: the integer to print
+ *
+ * Return: Nothing.
+ */
 int printnum(int ele)
 {
 	printf("%d\n", ele);
