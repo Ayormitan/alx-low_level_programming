@@ -8,39 +8,43 @@
  */
 void print_all(const char * const format, ...)
 {
+	int i;
+	char *string, *separator = "";
 	va_list lists;
-	const char *format_ptr = format;
 
+	i = 0;
 	va_start(lists, format);
-	while (*format_ptr)
+	if (format)
 	{
-		switch (*format_ptr)
+	while (format[i])
+	{
+		switch (format[i])
 		{
 		case 'i':
-			printf("%d", va_arg(lists, int));
+			printf("%s%d", separator, va_arg(lists, int));
 			break;
 		case 'c':
-			printf("%c", va_arg(lists, int));
+			printf("%s%c", separator, va_arg(lists, int));
 			break;
 		case 'f':
-			printf("%f", va_arg(lists, double));
+			printf("%s%f", separator, va_arg(lists, double));
 			break;
 		case 's':
-		{
-			char *string = va_arg(lists, char *);
-				if (string)
-					printf("%s", string);
-				else
-					printf("(nil)");
-		}
-		break;
+			string = va_arg(lists, char *);
+				if (!string)
+				{
+					string = "(nil)";
+					printf("%s%s", separator, string);
+				}
+			break;
 		default:
-			printf("ignore format");
+			i++;
+			continue;
 		}
-		if (*(format_ptr + 1))
-			printf(", ");
-		format_ptr++;
+		separator = ", ";
+		i++;
 	}
-	va_end(lists);
+	}
 	printf("\n");
+	va_end(lists);
 }
