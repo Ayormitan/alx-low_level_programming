@@ -8,7 +8,7 @@
  * @action: Pointer to function that will be used in printing the array
  * Return: ALway success
  */
-void array_iterator(int *array, size_t size, int (*action)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
 
