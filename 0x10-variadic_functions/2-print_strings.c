@@ -16,7 +16,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(list, n);
 	for (i = 0; i < n; i++)
 	{
-		strings = va_arg(list, char *);/** retreives the next arguments from the list*/
+		strings = va_arg(list, char *);/** retreives the next arguments from list*/
 	/** also takes pointer to string as type*/
 			if (strings == NULL)
 			{
