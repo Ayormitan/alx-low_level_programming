@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_pointer.h"
+#include "function_pointers.h"
 void print_normal_name(char *name)
 {
 	printf("My normal name is %s\n", name);
