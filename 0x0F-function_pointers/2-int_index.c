@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_pointer.h"
+#include "function_pointers.h"
 /**
  * int_index - Function checks checks index to return digit
  * @array: Pointer to array to check
