@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_pointer.h"
+#include "function_pointers.h"
 int printnum(int ele)
 {
 	printf("%d\n", ele);
