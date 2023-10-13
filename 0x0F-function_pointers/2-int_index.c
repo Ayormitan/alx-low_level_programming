@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "function_pointers.h"
 /**
  * int_index - Function checks checks index to return digit
@@ -11,6 +12,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
+	if (cmp == NULL || array == NULL)
+		exit(0);
 	if (size <= 0)
 	{
 		return (-1);
