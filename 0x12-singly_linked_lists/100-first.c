@@ -2,9 +2,10 @@
 void first(void)__attribute__((constructor));
 /**
  * first - Execur=te before main function
+ * then main
  */
 void first(void)
 {
-	printf("youre beat!,\n");
-	printf("I bore\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
