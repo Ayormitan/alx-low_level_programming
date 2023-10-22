@@ -3,9 +3,9 @@
 #include "main.h"
 /**
  * free_grid - frees 2d array off maloc
- * @gird: Second grid
+ * @grid: Second grid
  * @height: Height dimension of grid
- * Reurn: Freeds memory in a grid
+ * Return: Freeds memory in a grid
  */
 void free_grid(int **grid, int height)
 {
@@ -13,7 +13,7 @@ void free_grid(int **grid, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		free (grid[i]);
+		free(grid[i]);
 	}
 	free(grid);
 }
