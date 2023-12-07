@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *add_dnodein - function prints list of nodes
+ *add_dnodeint - function prints list of nodes
  *
  *@head: Double pointer to hed node
  *@n: Data to be pased to nodes
@@ -17,6 +17,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	{
 	printf("Memory allocation failed");
 	return (NULL);
+	}
+	if (*head != NULL)
+	{
+		(*head)->prev = new;
 	}
 	new->n = n; /** sets data n to a newly created node*/
 	new->prev = NULL;/** Set previous pointer to NULL**/
